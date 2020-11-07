@@ -22,7 +22,7 @@ public class ConversorFollowers {
             List<FollowersGit> ListaPessoas = new ArrayList<>();
             JSONArray jsonObj = new JSONArray(json);
 
-            for (int i=0; i < jsonObj.length(); i++){
+            for (int i=0; i < 3; i++){ //2 é o numero de Jsons que ele irá pegar
                 FollowersGit pessoa = new FollowersGit();
                 JSONObject objArray = jsonObj.getJSONObject(i);
 

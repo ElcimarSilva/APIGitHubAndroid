@@ -18,8 +18,6 @@ public class Conversor {
             JSONObject jsonObj = new JSONObject(json);
             userGit.setNome(jsonObj.getString("name"));
             userGit.setId(jsonObj.getString("id"));
-            userGit.setBio(jsonObj.getString("bio"));
-            userGit.setEndereco(jsonObj.getString("location"));
 
             return userGit;
         }catch (JSONException e){

@@ -52,8 +52,8 @@ public class ActivityFollower extends AppCompatActivity {
             String auxNome = null;
             String auxId = null;
             for(FollowersGit pessoa:ListaPessoa){
-                auxNome = auxNome + pessoa.getNome() + " | ";
-                auxId = auxId + pessoa.getId() + " | ";
+                auxNome = auxNome + pessoa.getNome() + " // ";
+                auxId = auxId + pessoa.getId() + " // ";
             }
             nome.setText(auxNome);
             id.setText(auxId);

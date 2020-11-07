@@ -4,8 +4,6 @@ public class UserGit {
 
     private String nome;
     private String id;
-    private String bio;
-    private  String endereco;
 
     public String getNome() {
         return nome;
@@ -23,20 +21,5 @@ public class UserGit {
         this.id = id;
     }
 
-    public String getBio() {
-        return bio;
-    }
-
-    public void setBio(String bio) {
-        this.bio = bio;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
 
 }

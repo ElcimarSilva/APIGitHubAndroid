@@ -14,8 +14,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView nome;
     private TextView id;
-    private TextView bio;
-    private TextView endereco;
     private ProgressDialog load;
 
     @Override
@@ -28,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
         nome = (TextView) findViewById(R.id.textView5);
         id = (TextView) findViewById(R.id.textView6);
-        bio = (TextView) findViewById(R.id.textView7);
-        endereco = (TextView) findViewById(R.id.textView8);
 
         Button botaoNext = (Button) findViewById(R.id.button);
         botaoNext.setOnClickListener(new View.OnClickListener()  {
@@ -64,8 +60,6 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(UserGit userGit){
             nome.setText(userGit.getNome());
             id.setText(userGit.getId());
-            bio.setText(userGit.getBio());
-            endereco.setText(userGit.getEndereco());
             load.dismiss();
         }
 
